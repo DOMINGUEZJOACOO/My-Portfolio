@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProfileCard from '../components/ProfileCard.astro';
+import Projects from '../components/Projects.astro';
+import Tecnologies from '../components/Tecnologies.astro';
+---
+	<Layout>
+		
+		<section id="about"class="about">
+			<ProfileCard />
+			<div class="about-text">
+				<h1>HI <br>
+					EVERYONE</h1>
+				<h2><i>¡Acá está quién soy y lo que hago!</i></h2>
+				<p>
+					Soy Joaquín Domínguez, estudiante de Desarrollo de Software. Actualmente curso tercer y último año de la carrera.
+					Muy comprometido con mis estudios y con ganas de aprender cada día un poco más. Me llama la atención el desarrollo web y la programación en general.
+					Este es mi espacio donde muestro quién soy, mis proyectos y el camino que recorro en el mundo tech 🚀.
+				</p>
+				
+			</div>
+				
+		</section>
+
+		<Tecnologies />
+		
+		<Projects />
+
+		<style>
+			.about{
+				display: flex;
+				align-items: center;
+				gap: 5rem;
+				padding: 5rem;
+				max-width: 950px;
+				margin: 0 auto;
+			}
+		
+			.about-text{
+				flex:1;
+				color: #000;;
+			}
+			.about-text h1{
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				color: #0E357D;
+			}
+			.about-text p{
+				font-size: 1.1rem;
+				line-height:1.9;
+				text-align: justify;
+			}
+		
+		</style>
+	</Layout>
+	
